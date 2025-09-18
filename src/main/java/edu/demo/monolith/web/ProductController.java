@@ -26,4 +26,17 @@ public class ProductController {
                 .stock(req.stock())
                 .build());
     }
+
+    @GetMapping
+    public int stock(@RequestBody ProductRequest req){
+        return req.stock();
+
+    }
+
+    @PutMapping
+    public Product putStock(@RequestBody ProductRequest req){
+        // TODO
+        return null;
+    }
+
 }
